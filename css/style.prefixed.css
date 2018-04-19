@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans"; }
+
+header {
+  height: 80vh;
+  background-image: url("../images/header-background.jpg");
+  background-size: cover; }
+
+/*# sourceMappingURL=style.prefixed.css.map */
