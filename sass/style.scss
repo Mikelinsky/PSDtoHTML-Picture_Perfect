@@ -18,7 +18,8 @@ $color) {
     line-height: 24px;
 }
 
-@mixin headline($fontSize, $color) {
+@mixin headline($fontSize,
+$color) {
     color: $color;
     font-family: $mainFont;
     font-size: $fontSize;
@@ -33,13 +34,20 @@ $color) {
 body {
     margin: 0;
 }
+
 .position-relative {
     position: relative;
 }
+
 .container {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 10%;
+}
+
+.flex-container {
+    display: flex;
 }
 
 /* --------------- GRID ---------------*/
@@ -227,10 +235,65 @@ header {
     padding: 140px 0;
     h2 {
         margin: 0;
-        @include headline(35px, $color-mediumDarkHeadline);
+        @include headline(35px,
+        $color-mediumDarkHeadline);
     }
     p {
         margin: 0;
-        @include paragraph(14px, $color-darkParagraph);
+        @include paragraph(14px,
+        $color-darkParagraph);
+    }
+}
+
+//gallery -------------------------------------------
+#gallery {
+    .gallery-links {
+        color: #ffffff;
+        font-family: $mainFont;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+    h3 {
+        @include headline(30px, $color-smallLightHeadlineGallery);
+        margin: 5px 0;
+    }
+    p {
+        @include paragraph(13px, $color-paragraphGallery);
+    }
+    [class*="cell"] {
+        padding: 30px;
+        flex-grow: 2;
+    }
+    .cell-1 {
+        background-color: #f5989d;
+        flex-grow: 1;
+    }
+    .cell-2 {
+        background-color: #615f7d;
+        flex-grow: 1;
+    }
+    .cell-3 {
+        background-image: url("../images/our-clients.jpg");
+        background-size: cover;
+        background-position: center;
+        flex-grow: 1;
+    }
+    .cell-4 {
+        background-color: #bd8cbf;
+        flex-grow: 2;
+    }
+    .cell-5 {
+        background-image: url("../images/sign-up.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    .cell-6 {
+        background-color: #82ca9c;
+    }
+    .cell-7 {
+        background-image: url("../images/start-something.jpg");
+        background-size: cover;
+        background-position: center; 
     }
 }
