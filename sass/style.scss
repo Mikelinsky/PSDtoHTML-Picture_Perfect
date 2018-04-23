@@ -43,7 +43,7 @@ body {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 10%;
+    padding: 0 5%;
 }
 
 .flex-container {
@@ -184,8 +184,8 @@ header {
     background-position: center;
     .iPhone {
         position: absolute;
-        bottom: -480px;
-        right: 0;
+        bottom: -500px;
+        right: 71px;
         height: 85vh;
     }
     nav {
@@ -211,8 +211,9 @@ header {
     .side-inscription {
         position: absolute;
         transform: rotate(-90deg);
-        left: 1%;
+        left: -40px;
         color: #ffffff;
+        bottom: 50%;
         .font-light {
             font-size: 12px;
             font-weight: 300;
@@ -221,7 +222,7 @@ header {
             font-family: "Open Sans", sans-serif;
         }
         .font-semi-bold {
-            font-family: "Open Sans", sans-serif;
+            font-family: "Open Sans - Semibold", sans-serif;
             font-size: 12px;
             font-weight: 600;
             text-transform: uppercase;
@@ -232,7 +233,7 @@ header {
 
 //something new ------------------------------------
 #startNew {
-    padding: 140px 0;
+    padding: 60px 0;
     h2 {
         margin: 0;
         @include headline(35px,
@@ -253,47 +254,151 @@ header {
         font-size: 14px;
         font-weight: 700;
         line-height: 24px;
+        cursor: pointer;
+        z-index: 1;
+        text-decoration: none;
     }
     h3 {
-        @include headline(30px, $color-smallLightHeadlineGallery);
-        margin: 5px 0;
+        @include headline(30px,
+        $color-smallLightHeadlineGallery);
+        margin: 0;
+        position: relative;
+        z-index: 1;
     }
     p {
-        @include paragraph(13px, $color-paragraphGallery);
+        @include paragraph(13px,
+        $color-paragraphGallery);
+        position: relative;
+        z-index: 1;
+    }
+    img {
+        position: relative;
+        width: 18px;
+        height: 18px;
+        path {
+            fill: #ffffff;
+        }
+    }
+    .heart-img-positioning {
+        display: flex;
+        justify-content: space-between;
     }
     [class*="cell"] {
         padding: 30px;
-        flex-grow: 2;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 270px;
     }
     .cell-1 {
         background-color: #f5989d;
-        flex-grow: 1;
+        width: 20%;
     }
     .cell-2 {
         background-color: #615f7d;
-        flex-grow: 1;
+        width: 20%;
     }
     .cell-3 {
         background-image: url("../images/our-clients.jpg");
         background-size: cover;
         background-position: center;
-        flex-grow: 1;
+        width: 20%;
+        position: relative;
     }
     .cell-4 {
         background-color: #bd8cbf;
-        flex-grow: 2;
+        width: 40%;
     }
     .cell-5 {
         background-image: url("../images/sign-up.jpg");
         background-size: cover;
         background-position: center;
+        width: 40%;
+        position: relative;
     }
     .cell-6 {
         background-color: #82ca9c;
+        width: 20%;
     }
     .cell-7 {
         background-image: url("../images/start-something.jpg");
         background-size: cover;
-        background-position: center; 
+        background-position: center;
+        width: 40%;
+        position: relative;
+    }
+    .gallery-layer {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+    }
+}
+
+//a look at the detalis
+#look-at-details {
+    padding: 50px 0 80px 0;
+    h2 {
+        @include headline(35px,
+        $color-mediumDarkHeadline);
+    }
+    h5 {
+        @include headline(13px,
+        $color-littleHeadline);
+        font-weight: 600;
+        margin: 0;
+    }
+    p {
+        @include paragraph(14px,
+        $color-darkParagraph);
+    }
+}
+
+//more power
+#more-power {
+    background-image: url("../images/car_cockpit.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 80vh;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 100px 0;
+    h1 {
+        @include headline(60px,
+        $color-mainLightHeadline);
+        font-weight: 300;
+    }
+    p {
+        @include paragraph(13px,
+        #ffffff);
+    }
+    a {
+        color: #ffffff;
+        font-family: $mainFont;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+        text-decoration: none;
+    }
+}
+//reasons to get
+#reasons-to-get {
+    background-color: #82ca9c;
+    height: 55vh;
+    padding: 100px 0;
+    h3 {
+        @include headline(35px, #ffffff);
+        margin: 0;
+    }
+    h5 {
+        @include headline(13px, #ffffff);
+        font-weight: 600;
+    }
+    p {
+        @include paragraph(14px, #ffffff);
+        font-weight: 300;
     }
 }
