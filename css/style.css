@@ -326,4 +326,12 @@ header {
     line-height: 24px;
     font-weight: 300; }
 
+#offer {
+  background-color: #f6f7fa; }
+  #offer .extra-padding {
+    padding: 50px; }
+  #offer [class*="box-"] {
+    background-color: #e1e1e1;
+    border-radius: 5px; }
+
 /*# sourceMappingURL=style.css.map */

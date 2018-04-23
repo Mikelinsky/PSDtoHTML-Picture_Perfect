@@ -402,3 +402,14 @@ header {
         font-weight: 300;
     }
 }
+//offer
+#offer {
+    background-color: #f6f7fa;
+    .extra-padding {
+        padding: 50px;
+    }
+    [class*="box-"] {
+        background-color: #e1e1e1;
+        border-radius: 5px;
+    }
+}
