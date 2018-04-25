@@ -62,7 +62,9 @@ body {
     display: table;
     clear: both;
 }
-
+.row {
+    display: flex;
+}
 //for mobile
 [class*="col-"] {
     width: 100%;
@@ -70,7 +72,6 @@ body {
     float: left;
 }
 
-//for mobile
 [class*="col-"] {
     float: left;
     min-height: 1px;
@@ -437,8 +438,7 @@ header {
                 color: #ffffff;
             }
         }
-    }   
-
+    }
     h2 {
         @include headline(30px,
         $color-offerHeadlines);
@@ -468,5 +468,38 @@ header {
             margin-bottom: 3px;
             margin-right: 15px;
         }
+    }
+}
+
+footer {
+    background-color: #192431;
+    h5 {
+        @include headline(13px,
+        $color-footerElements);
+        font-weight: 600;
+    }
+    p {
+        @include paragraph(13px,
+        $color-footerElements);
+    }
+    input {
+        width: 400px;
+        height: 58px;
+        background-color: $color-footerElements;
+        border: none;
+        border-radius: 2px 0 0 2px;
+        padding-left: 15px;
+    }
+    button {
+        width: 70px;
+        height: 58px;
+        background-color: #82ca9c;
+        border: none;
+        border-radius: 0 2px 2px 0;
+        cursor: pointer;
+    }
+    .annotation-form {
+        @include paragraph(12px,#57697f);
+        line-height: 18px;
     }
 }
