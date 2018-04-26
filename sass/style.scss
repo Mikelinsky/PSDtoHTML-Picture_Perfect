@@ -62,6 +62,7 @@ body {
     display: table;
     clear: both;
 }
+
 .row {
     display: flex;
 }
@@ -414,6 +415,17 @@ header {
 #offer {
     background-color: $color-offerSection;
     padding: 100px 0;
+    .offer-inscription {
+        position: absolute;
+        color: #b8b8b8;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+        top: 30%;
+        left: 0;
+        transform: rotate(-90deg);
+    }
     .extra-padding {
         padding: 40px;
     }
@@ -471,8 +483,10 @@ header {
     }
 }
 
+//footer
 footer {
     background-color: #192431;
+    padding: 120px 0;
     h5 {
         @include headline(13px,
         $color-footerElements);
@@ -488,7 +502,7 @@ footer {
         background-color: $color-footerElements;
         border: none;
         border-radius: 2px 0 0 2px;
-        padding-left: 15px;
+        padding-left: 20px;
     }
     button {
         width: 70px;
@@ -499,7 +513,14 @@ footer {
         cursor: pointer;
     }
     .annotation-form {
-        @include paragraph(12px,#57697f);
+        @include paragraph(12px,
+        #57697f);
         line-height: 18px;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+        @include paragraph(13px,
+        #f6f7fa);
     }
 }

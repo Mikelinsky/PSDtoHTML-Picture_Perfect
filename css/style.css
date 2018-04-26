@@ -331,6 +331,16 @@ header {
 #offer {
   background-color: #f6f7fa;
   padding: 100px 0; }
+  #offer .offer-inscription {
+    position: absolute;
+    color: #b8b8b8;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    top: 30%;
+    left: 0;
+    transform: rotate(-90deg); }
   #offer .extra-padding {
     padding: 40px; }
   #offer .offer-cell {
@@ -382,7 +392,8 @@ header {
       margin-right: 15px; }
 
 footer {
-  background-color: #192431; }
+  background-color: #192431;
+  padding: 120px 0; }
   footer h5 {
     color: #f6f7fa;
     font-family: "Open Sans";
@@ -401,7 +412,7 @@ footer {
     background-color: #f6f7fa;
     border: none;
     border-radius: 2px 0 0 2px;
-    padding-left: 15px; }
+    padding-left: 20px; }
   footer button {
     width: 70px;
     height: 58px;
@@ -416,5 +427,13 @@ footer {
     font-weight: 400;
     line-height: 24px;
     line-height: 18px; }
+  footer ul {
+    list-style-type: none;
+    padding: 0;
+    color: #f6f7fa;
+    font-family: "Open Sans";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px; }
 
 /*# sourceMappingURL=style.css.map */
