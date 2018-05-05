@@ -477,28 +477,55 @@ footer {
 
   #look-at-details {
     padding: 30px 0; }
-    #look-at-details h2 {
-      color: #222626;
-      font-family: "Open Sans";
-      font-size: 35px;
-      font-weight: 300; }
-    #look-at-details h5 {
-      color: #67676d;
-      font-family: "Open Sans";
-      font-size: 13px;
-      font-weight: 300;
-      font-weight: 600;
-      margin: 0; }
-    #look-at-details p {
-      color: #959595;
-      font-family: "Open Sans";
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 24px; }
 
   #more-power {
     height: auto;
     padding: 50px 0; }
+    #more-power br {
+      display: none; }
+
+  #reasons-to-get {
+    padding: 50px 0; }
+
+  #offer {
+    padding: 50px 0; }
+
+  footer {
+    padding: 50px 0; } }
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+
+  [class*="col-"] {
+    width: 100%;
+    padding: 12px;
+    float: left; }
+
+  header {
+    height: 100vh; }
+    header .iPhone {
+      bottom: -380px;
+      right: 50px;
+      height: 55vh; }
+    header .side-inscription {
+      bottom: 20%; }
+
+  .dark-inscription {
+    display: none; }
+
+  #gallery [class*="cell"] {
+    width: 100%;
+    min-height: 200px; }
+
+  #look-at-details {
+    padding: 30px 0; }
+
+  #more-power {
+    height: auto;
+    padding: 50px 0; }
+    #more-power br {
+      display: none; }
 
   #reasons-to-get {
     padding: 50px 0; }

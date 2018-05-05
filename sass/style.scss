@@ -562,24 +562,13 @@ footer {
     } //a look at the detalis
     #look-at-details {
         padding: 30px 0;
-        h2 {
-            @include headline(35px,
-            $color-mediumDarkHeadline);
-        }
-        h5 {
-            @include headline(13px,
-            $color-littleHeadline);
-            font-weight: 600;
-            margin: 0;
-        }
-        p {
-            @include paragraph(14px,
-            $color-darkParagraph);
-        }
     } //more power---------------------------------
     #more-power {
         height: auto;
         padding: 50px 0;
+        br {
+            display: none;
+        }
     } //reasons to get---------------------------------
     #reasons-to-get {
         padding: 50px 0;
@@ -594,7 +583,56 @@ footer {
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) {}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .row {
+        flex-wrap: wrap;
+    }
+    [class*="col-"] {
+        width: 100%;
+        padding: 12px;
+        float: left;
+    } //  header-------------------------------------------------
+    header {
+        height: 100vh;
+        .iPhone {
+            bottom: -380px;
+            right: 50px;
+            height: 55vh;
+        }
+        .side-inscription {
+            bottom: 20%;
+        }
+    } //inscripctions--------------------------------
+    .dark-inscription {
+        display: none;
+    } //gallery---------------------------------------
+    #gallery {
+        [class*="cell"] {
+            width: 100%;
+            min-height: 200px;
+        }
+    } //a look at the detalis
+    #look-at-details {
+        padding: 30px 0;
+    } //more power---------------------------------
+    #more-power {
+        height: auto;
+        padding: 50px 0;
+        br {
+            display: none;
+        }
+    } //reasons to get---------------------------------
+    #reasons-to-get {
+        padding: 50px 0;
+    } //offer
+    #offer {
+        padding: 50px 0;
+    }
+    // footer
+    footer {
+        padding: 50px 0;
+    }
+}
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px) {}
