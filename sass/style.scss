@@ -66,12 +66,6 @@ body {
 .row {
     display: flex;
 }
-//for mobile
-[class*="col-"] {
-    width: 100%;
-    padding: 12px;
-    float: left;
-}
 
 [class*="col-"] {
     float: left;
@@ -235,6 +229,7 @@ header {
         }
     }
 }
+
 //inscriptions -----------------------------------
 .dark-inscription {
     position: absolute;
@@ -247,6 +242,7 @@ header {
     left: 0;
     transform: rotate(-90deg);
 }
+
 //something new ------------------------------------
 #startNew {
     padding: 60px 0;
@@ -378,7 +374,6 @@ header {
     background-image: url("../images/car_cockpit.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 80vh;
     display: flex;
     flex-direction: column-reverse;
     padding: 100px 0;
@@ -524,3 +519,88 @@ footer {
         #f6f7fa);
     }
 }
+
+/*-------------------MEDIA QUERIES---------------------*/
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .row {
+        flex-wrap: wrap;
+    }
+    [class*="col-"] {
+        width: 100%;
+        padding: 12px;
+        float: left;
+    } //  header-------------------------------------------------
+    header {
+        height: 100vh;
+        .iPhone {
+            bottom: -380px;
+            right: 18px;
+            height: 50vh;
+        }
+        .header-headline {
+            text-align: center;
+            p {
+                br {
+                    display: none;
+                }
+            }
+        }
+        .side-inscription {
+            bottom: 20%;
+        }
+    } //inscripctions--------------------------------
+    .dark-inscription {
+        display: none;
+    } //gallery---------------------------------------
+    #gallery {
+        [class*="cell"] {
+            width: 100%;
+            min-height: 200px;
+        }
+    } //a look at the detalis
+    #look-at-details {
+        padding: 30px 0;
+        h2 {
+            @include headline(35px,
+            $color-mediumDarkHeadline);
+        }
+        h5 {
+            @include headline(13px,
+            $color-littleHeadline);
+            font-weight: 600;
+            margin: 0;
+        }
+        p {
+            @include paragraph(14px,
+            $color-darkParagraph);
+        }
+    } //more power---------------------------------
+    #more-power {
+        height: auto;
+        padding: 50px 0;
+    } //reasons to get---------------------------------
+    #reasons-to-get {
+        padding: 50px 0;
+    } //offer
+    #offer {
+        padding: 50px 0;
+    }
+    // footer
+    footer {
+        padding: 50px 0;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}

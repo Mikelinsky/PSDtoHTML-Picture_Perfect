@@ -29,11 +29,6 @@ body {
   display: flex; }
 
 [class*="col-"] {
-  width: 100%;
-  padding: 12px;
-  float: left; }
-
-[class*="col-"] {
   float: left;
   min-height: 1px;
   padding: 12px; }
@@ -292,7 +287,6 @@ header {
   background-image: url("../images/car_cockpit.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
-  height: 80vh;
   display: flex;
   flex-direction: column-reverse;
   padding: 100px 0; }
@@ -436,5 +430,69 @@ footer {
     font-size: 13px;
     font-weight: 400;
     line-height: 24px; }
+
+/*-------------------MEDIA QUERIES---------------------*/
+@media (max-width: 575.98px) {
+  .row {
+    flex-wrap: wrap; }
+
+  [class*="col-"] {
+    width: 100%;
+    padding: 12px;
+    float: left; }
+
+  header {
+    height: 100vh; }
+    header .iPhone {
+      bottom: -380px;
+      right: 18px;
+      height: 50vh; }
+    header .header-headline {
+      text-align: center; }
+      header .header-headline p br {
+        display: none; }
+    header .side-inscription {
+      bottom: 20%; }
+
+  .dark-inscription {
+    display: none; }
+
+  #gallery [class*="cell"] {
+    width: 100%;
+    min-height: 200px; }
+
+  #look-at-details {
+    padding: 30px 0; }
+    #look-at-details h2 {
+      color: #222626;
+      font-family: "Open Sans";
+      font-size: 35px;
+      font-weight: 300; }
+    #look-at-details h5 {
+      color: #67676d;
+      font-family: "Open Sans";
+      font-size: 13px;
+      font-weight: 300;
+      font-weight: 600;
+      margin: 0; }
+    #look-at-details p {
+      color: #959595;
+      font-family: "Open Sans";
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px; }
+
+  #more-power {
+    height: auto;
+    padding: 50px 0; }
+
+  #reasons-to-get {
+    padding: 50px 0; }
+
+  #offer {
+    padding: 50px 0; }
+
+  footer {
+    padding: 50px 0; } }
 
 /*# sourceMappingURL=style.css.map */
