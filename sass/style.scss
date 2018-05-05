@@ -377,6 +377,7 @@ header {
     display: flex;
     flex-direction: column-reverse;
     padding: 100px 0;
+    height: 80vh;
     h1 {
         @include headline(60px,
         $color-mainLightHeadline);
@@ -575,8 +576,7 @@ footer {
     } //offer
     #offer {
         padding: 50px 0;
-    }
-    // footer
+    } // footer
     footer {
         padding: 50px 0;
     }
@@ -627,18 +627,88 @@ footer {
     } //offer
     #offer {
         padding: 50px 0;
-    }
-    // footer
+    } // footer
     footer {
         padding: 50px 0;
     }
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) {}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .row {
+        flex-wrap: wrap;
+    } //  header-------------------------------------------------
+    header {
+        height: 100vh;
+        .iPhone {
+            right: 50px;
+            height: 75vh;
+        }
+        .side-inscription {
+            bottom: 20%;
+        }
+    } //inscripctions--------------------------------
+    .dark-inscription {
+        display: none;
+    } //gallery---------------------------------------
+    #gallery {
+        [class*="cell"] {
+            width: 100%;
+            min-height: 200px;
+        }
+    } //a look at the detalis
+    #look-at-details {
+        padding: 30px 0;
+    } //more power---------------------------------
+    #more-power {
+        height: auto;
+        padding: 50px 0;
+    } //reasons to get---------------------------------
+    #reasons-to-get {
+        padding: 50px 0;
+    } //offer
+    #offer {
+        padding: 50px 0;
+    } // footer
+    footer {
+        padding: 50px 0;
+    }
+}
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) {}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+ //  header-------------------------------------------------
+    header {
+        height: 100vh;
+        .iPhone {
+            right: 50px;
+            height: 75vh;
+        }
+        .side-inscription {
+            bottom: 20%;
+        }
+    } //gallery---------------------------------------
+    #gallery {
+        [class*="cell"] {
+            min-height: 200px;
+        }
+    } //a look at the detalis
+    #look-at-details {
+        padding: 30px 0;
+    } //more power---------------------------------
+    #more-power {
+        padding: 50px 0;
+    } //reasons to get---------------------------------
+    #reasons-to-get {
+        padding: 50px 0;
+    } //offer
+    #offer {
+        padding: 50px 0;
+    } // footer
+    footer {
+        padding: 50px 0;
+    }
+}
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {}
