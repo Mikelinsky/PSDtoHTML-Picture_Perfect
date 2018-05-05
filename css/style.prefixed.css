@@ -167,6 +167,17 @@ header {
       text-transform: uppercase;
       letter-spacing: 0.3px; }
 
+.dark-inscription {
+  position: absolute;
+  color: #b8b8b8;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  top: 30%;
+  left: 0;
+  transform: rotate(-90deg); }
+
 #startNew {
   padding: 60px 0; }
   #startNew h2 {
@@ -344,16 +355,6 @@ header {
 #offer {
   background-color: #f6f7fa;
   padding: 100px 0; }
-  #offer .offer-inscription {
-    position: absolute;
-    color: #b8b8b8;
-    font-size: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.3px;
-    top: 30%;
-    left: 0;
-    transform: rotate(-90deg); }
   #offer .extra-padding {
     padding: 40px; }
   #offer .offer-cell {

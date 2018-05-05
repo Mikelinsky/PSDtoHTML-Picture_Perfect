@@ -235,7 +235,18 @@ header {
         }
     }
 }
-
+//inscriptions -----------------------------------
+.dark-inscription {
+    position: absolute;
+    color: #b8b8b8;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    top: 30%;
+    left: 0;
+    transform: rotate(-90deg);
+}
 //something new ------------------------------------
 #startNew {
     padding: 60px 0;
@@ -415,17 +426,6 @@ header {
 #offer {
     background-color: $color-offerSection;
     padding: 100px 0;
-    .offer-inscription {
-        position: absolute;
-        color: #b8b8b8;
-        font-size: 12px;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 0.3px;
-        top: 30%;
-        left: 0;
-        transform: rotate(-90deg);
-    }
     .extra-padding {
         padding: 40px;
     }
