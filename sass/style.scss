@@ -499,6 +499,7 @@ footer {
         border: none;
         border-radius: 2px 0 0 2px;
         padding-left: 20px;
+        font-size: 18px;
     }
     button {
         width: 70px;
@@ -709,6 +710,3 @@ footer {
         padding: 50px 0;
     }
 }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {}
